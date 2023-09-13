@@ -1,25 +1,26 @@
 import logo from './logo.svg';
 import './App.css';
-import Product from './Product.js'
-import './css/reset.css'
-import './css/index.css'
+import Product from './Product.js';
+import './css/reset.css';
+import './css/index.css';
+
+import image from './image/usp_a.jpg';
+import State from './State';
 
 
 
 function App() {
   return (
     <div className='apps'>
- <header>
+      <header>
         <div className="header-inner">
             <h1>
                 <a href="#"><span className="hidden">SOCAR</span></a>
 
-                {/* <svg version="1.1" id="레이어_1" xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 160.2 32.5"
-                    style="enable-background:new 0 0 160.2 32.5;" xml:space="preserve">
-                    <style type="text/css">
+                <svg version="1.1" id="레이어_1" xmlns="http://www.w3.org/2000/svg"
+                     x="0px" y="0px" viewBox="0 0 160.2 32.5"
+                    >
 
-                    </style>
                     <g>
                         <g>
                             <path className="st0"
@@ -39,7 +40,7 @@ function App() {
                             L153,20.2z M147,15.8h-7.1v-8h7.1c2.6,0,4.4,1.6,4.4,4S149.6,15.8,147,15.8z" />
                         </g>
                     </g>
-                </svg> */}
+                </svg>
             </h1>
             <a href="#" className="hamberger"><span className="hidden">메뉴</span></a>
         </div>
@@ -82,7 +83,7 @@ function App() {
                     쏘카와 함께 이동하세요.
                 </p>
                 <figure>
-                    <img src="image/usp_a.jpg" alt="차 옆에 서있는 남자가 싱글벙글 웃는 사진" />
+                    <img src={image} alt="차 옆에 서있는 남자가 싱글벙글 웃는 사진" />
                 </figure>
             </div>
             <div className="advantage">
@@ -142,7 +143,7 @@ function App() {
         <div className="footer-container">
             <div className="sns-container">
                 <a href="#">
-                    {/* <svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" viewBox="0 0 33 33">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" viewBox="0 0 33 33">
                         <g id="그룹_553" data-name="그룹 553" transform="translate(5481 -4830)">
                             <g id="그룹_502" data-name="그룹 502" transform="translate(-5544 -93)">
                                 <g id="그룹_109" data-name="그룹 109" transform="translate(63.654 4923.808)">
@@ -165,10 +166,10 @@ function App() {
                                 </g>
                             </g>
                         </g>
-                    </svg> */}
+                    </svg>
                 </a>
                 <a href="#">
-                    {/* <svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" viewBox="0 0 33 33">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" viewBox="0 0 33 33">
                         <g id="그룹_554" data-name="그룹 554" transform="translate(5481 -4768.192)">
                             <g id="그룹_109" data-name="그룹 109" transform="translate(-5480.346 4769)">
                                 <g id="그룹_86" data-name="그룹 86" transform="translate(0 0)">
@@ -183,10 +184,10 @@ function App() {
                                 </g>
                             </g>
                         </g>
-                    </svg> */}
+                    </svg>
                 </a>
                 <a href="#">
-                    {/* <svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" viewBox="0 0 33 33">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" viewBox="0 0 33 33">
                         <g id="그룹_555" data-name="그룹 555" transform="translate(5488 -4905.192)">
                             <g id="그룹_110" data-name="그룹 110" transform="translate(-5486.692 4906)">
                                 <g id="그룹_85" data-name="그룹 85" transform="translate(0 0)">
@@ -200,10 +201,10 @@ function App() {
                                 </g>
                             </g>
                         </g>
-                    </svg> */}
+                    </svg>
                 </a>
                 <a href="#">
-                    {/* <svg xmlns="http://www.w3.org/2000/svg" width="33.192" height="33.192" viewBox="0 0 33.192 33.192">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="33.192" height="33.192" viewBox="0 0 33.192 33.192">
                         <g id="그룹_556" data-name="그룹 556" transform="translate(5425 -4952)">
                             <g id="그룹_26" data-name="그룹 26" transform="translate(-5424 4953)">
                                 <path id="패스_84" data-name="패스 84"
@@ -214,7 +215,7 @@ function App() {
                                     transform="translate(-350.439 -227.498)" fill="#646f7c" />
                             </g>
                         </g>
-                    </svg> */}
+                    </svg>
                 </a>
             </div>
             <nav>
@@ -276,6 +277,7 @@ function App() {
         </figure>
         <p>쏘카 앱 다운로드</p>
     </section>
+    <State></State>
 
 </div>
 

@@ -18,3 +18,15 @@ node 설치확인
 리액트 프로젝트 실행
     터미널 - 리액트 프로젝트 위치에서
     npm start
+
+
+리액트 내에서 HTML 자동완성
+    F1 -> Open user settings(JSON)
+
+    "emmet.includeLanguages": { "javascript": "javascriptreact" },
+    직접 쓰는것보다 구글에 react html 자동완성검색해서 복사 붙여넣기 하세요
+
+    {
+    "emmet.includeLanguages": { "javascript": "javascriptreact" },
+    "window.zoomLevel": 2
+    }   
