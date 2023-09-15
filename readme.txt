@@ -26,7 +26,8 @@ node 설치확인
     "emmet.includeLanguages": { "javascript": "javascriptreact" },
     직접 쓰는것보다 구글에 react html 자동완성검색해서 복사 붙여넣기 하세요
 
+    ex)
     {
-    "emmet.includeLanguages": { "javascript": "javascriptreact" },
-    "window.zoomLevel": 2
+        "emmet.includeLanguages": { "javascript": "javascriptreact" },
+        "window.zoomLevel": 2
     }   
