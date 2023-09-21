@@ -57,7 +57,17 @@ function App() {
 
     const [isChecked,setIsChecked] = useState(true);
     const [isLoggedIn , setIsLoggedIn] = useState(false)
-    
+
+    const [로딩목록,set로딩목록] = useState([]);
+    const 로딩컨텐츠 = <p>로딩중..
+    </p>;
+
+    function handleAddLoading(){
+        set로딩목록([...로딩목록,로딩컨텐츠])
+        
+    }
+
+
     
   return (
 
@@ -161,7 +171,29 @@ function App() {
         setIsLoggedIn(!isLoggedIn)
     }}>{isLoggedIn ? '로그아웃' : '로그인'}</button>
 
+
+    <button onClick={handleAddLoading}>불러오기</button>
+    {로딩목록}
+
+    {/* 불러오기 버튼을 누르면? */}
+
+    
+ 
+    {/* 로딩중.. */}
+    {/* 로딩이 완료되었습니다. */}
+  
+
+    {/* setTimeout과 useState 이용해서 만들어보도록 합시다! */}
+
+
+
+
+
+
+
     {/* 배열.map(처리방법) */}
+
+
     <main>
         <section id="advantages-container">
             <div className="advantage">
