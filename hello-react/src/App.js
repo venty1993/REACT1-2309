@@ -13,11 +13,14 @@ import PropsFunComp from './PropsFunComp';
 import ForComp from './ForComp';
 import MeatLove from './MeatLove';
 import LoginCheck from './LoginCheck';
+import FlowTest from './FlowTest';
+
 
 
 
 
 function App() {
+    const [parentCount,setParentCount] = useState(0);
 
     const [heading, setHeading] = useState('24시간 언제나')
     
@@ -28,6 +31,7 @@ function App() {
     for(let i = 0 ; i < 10 ; i ++) {
         반복컴포넌트.push(<ForComp index={i+1}></ForComp>);
     }
+
 
     let test = '';
 
@@ -43,7 +47,9 @@ function App() {
     )
     console.log(고기맵);
 
-
+    function countIncress() {
+        setParentCount(parentCount+1);
+    }
 
 
     const 고기반복문 = [];
@@ -163,6 +169,11 @@ function App() {
         고기목록.map((고기,index)=>
         <MeatLove 고기종류={고기} 순서={index}></MeatLove>)
     }
+
+    <FlowTest count='1' 도구={countIncress}></FlowTest>
+
+    <p>부모카운트 : {parentCount}</p>
+    <button onClick={()=>setParentCount(parentCount+1)}>증가</button>
 
 {/* 로그인 버튼을 누르면 컴포넌트 내의 문구가 바뀌고, 버튼도 로그아웃 버튼으로 변하게. */}
 {/* 로그아웃버튼을 눌렀을때도 컴포넌트의 문구가 바뀌며 버튼은 로그인 버튼으로 바뀌게 */}
