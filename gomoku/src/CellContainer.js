@@ -14,18 +14,15 @@ export default function CellContainer(props) {
 
   return (
     <> 
-
-
         {props.전달.map((row, rowIndex) => (
             <div className='row' key={rowIndex}>
                 {row.map((cell,cellIndex)=>
                 (
-                    <div className='cell' key={cellIndex}>
+                    <div className='cell' key={cellIndex} onClick={()=>{props.착수함수(rowIndex,cellIndex)}}>
                         {cell !== null ? <div className={`stone ${cell==='black'?'black':'white'}`}>
                         </div>:null}
                     </div>
-                )
-                    ) }
+                ))}
             </div>
             )
         )}
