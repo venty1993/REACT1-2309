@@ -42,9 +42,7 @@ function App() {
 
   return (
     <div className="App">
-      <button onClick={()=>{
-        handleDropStone(2,4,'black');
-      }}>테스트</button>
+
       <div className="board">
         <LineContainer 칸수={칸수}></LineContainer>
         <CellContainer 전달={게임판} 착수함수={handleDropStone}></CellContainer>
